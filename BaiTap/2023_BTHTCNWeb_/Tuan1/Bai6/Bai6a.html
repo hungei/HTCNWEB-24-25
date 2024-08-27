@@ -6,36 +6,143 @@
     <title>Bai6a</title>
     <style>
          table {
-            border:1px solid black;
+            border:1px solid lightblue;
             border-collapse: collapse;
          }
+         .khung1{
+                background:lightblue;
+                border: solid 1px lightblue;
+                padding: 20px;
+                width: 55%; 
+            }
+        #dong2{
+            width: 80px;
+        }
+        img{
+            display: flex;
+            margin: 0 auto;
+        }
+        h2,p{
+           display: flex;
+           justify-content: center;
+        }
+        #lastname{
+            width: 100px;
+        }
+
+        .submit1{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        #tuade{
+            vertical-align: top;
+        }
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <img src="title.jpg" alt="" width="300px" >
-        </tr>
-        <tr><h2>Registration Form</h2></tr>
-        <tr><p>Register your Jackson  ELectronics product here</p></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-
-    </table>
+    <div class="khung1">
+        <form >
+            <table>
+                <tr >
+                    <img src="title.jpg" alt="" width="300px" >
+                </tr>
+                <tr id="head"><h2 >Registration Form</h2>
+                <p>Register your Jackson  ELectronics product here</p>
+                </tr>
+        
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text"></td>
+                    <td>Last Name:</td>
+                    <td><input id="lastname" type="text"></td>
+                </tr>
+        
+                <tr>
+                    <td>Address #1:</td>
+                    <td ><input type="text"></td>
+                </tr>
+        
+        
+                <tr>
+                    <td>Address #2:</td>
+                    <td ><input type="text"></td>
+                </tr>
+        
+        
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text"></td>
+                    <td >State: <input id="dong2" type="text" ></td>
+                    <td >Zip: <input id="dong2" type="text"></td>
+                </tr>
+        
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text"></td>
+                </tr>
+        
+                <tr>
+                    <td colspan="4"><hr></td>
+                </tr>
+        
+                <tr>
+                    <td>Product</td>
+                    <td> <select id="product" name="product">    
+                        <option value="ScanMaster"> ScanMaster </option>
+                        <option value="ScanMaster1"> ScanMaster1 </option> 
+                    </select> <br></td>
+                </tr>
+        
+                <tr>
+                    <td>Date Purchased:</td>
+                    <td><input type="text"></td>
+                </tr>
+        
+                <tr>
+                    <td>Serial #:</td>
+                    <td><input type="text"></td>
+                </tr>
+        
+                <tr>
+                    <td id="tuade" rowspan="3">Used for:</td>
+                    <td><input type="radio">Home</td>
+                    <td><input type="radio">Educational Institution</td>
+                </tr>
+        
+                <tr>
+                    <td><input type="radio">Business</td>
+                    <td><input type="radio">Other</td>
+                </tr>
+        
+                <tr>
+                    <td><input type="radio">Goverment</td>
+                </tr>
+        
+                <tr>
+                    <td id="tuade" rowspan="2">System (check all that apply)</td>
+                    <td><input type="checkbox">Windows</td>
+                    <td><input type="checkbox">UNIX</td>
+                </tr>
+        
+                <tr>
+                    <td><input type="checkbox">Macintosh</td>
+                    <td><input type="checkbox">Other</td>
+                </tr>
+        
+                <tr><td colspan="4"><hr></td></tr>
+        
+                <tr>
+                    <td rowspan="4">Comments?:</td>
+                    <td rowspan="4" colspan="3"><textarea name="" id="" rows="4" cols="60"></textarea><br></td>
+                </tr>
+            </table>
+            <div class="submit1">
+                <button type="submit">Click to Register</button><button type="submit">Click to cancel</button>
+            </div>
+            
+            
+        </form>
+    </div>
 </body>
 </html>

@@ -12,26 +12,26 @@
             .khung{
                 background: white;
                 border: solid 1px lightblue;
-                margin: 0.1px;
-                padding:20px;
-                padding: 0.1px;
                 padding-bottom: 20px;
+                
             }
             .khungtren{
+                height: 50%;
                 background: white;
-                padding-top: 10px;
+                padding: 5px;
                 border: solid 1px black;
                 margin: 0.1px;
-                padding:20px;
-                padding: 0.1px;
+                
+                
                 margin-bottom: 10px;
             }
             .khungduoi{
                 background: white;
-                border: solid 1px black;
-                margin: 0.1px;
-                padding:20px;
-                padding: 0.1px;
+                border: solid 1px black;   
+                padding: 5px;
+            }
+            #howdidyouhearofus{
+                width: 150px;
             }
         </style>
     </head>
@@ -40,35 +40,50 @@
             <form> 
                 <h1> Contact Us </h1>    
                 <div class="khungtren">
-                    <p> Your message:</p>
-
-                    <label for="to"> To: </label>
-                    <input  type="text" id="to" name="to" > <br>
-
-                    <label for="youremail"> Your email: </label>
-                    <input  type="email" id="youremail" name="youremail" > <br>
-
-                    <label for="message"> Message</label>
-                    <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
-
-                    <label for="attachfile"> Attach File </label>
-                    <input type="file" id="attachfile" name="attachfile"> <br>
+                    <table>
+                        <tr>
+                            <td><p>Your Message</p></td>
+                        </tr>
+                        <tr>
+                            <td><label for="to"> To: </label></td>
+                            <td><input  type="text" id="to" name="to" > <br></td>
+                    </tr>
+                        <tr>
+                            <td><label for="youremail"> Your email: </label></td>
+                            <td><input  type="email" id="youremail" name="youremail" > <br></td>
+                        </tr>
+                            <tr>
+                                <td><label for="message"> Message</label></td>
+                                <td><textarea id="message" name="message" rows="6" cols="40"></textarea><br><br></td>
+                            </tr>
+                           
+                        <tr>
+                            <td><label for="attachfile"> Attach File </label></td>
+                            <td><input type="file" id="attachfile" name="attachfile"> <br></td>
+                        </tr>
+                        
+                    </table>
                 </div>   
              
             <div class="khungduoi"> 
                 <p> How you found us:</p>
-                <labe for="howdidyouhearofus"> How did you  hear of us </labe>
-                    <select id="howdidyouhearofus" name="howdidyouhearofus">    
-                        <option value="google"> Google </option>
-                        <option value="fb"> Facebook </option>
-                        <option value="ins"> Instagram </option>
-                        <option value="zalo"> Zalo </option>
-                        <option value="tiktok"> Tik Tok</option>
-                    </select> <br>
-                <p>            
-                    <label for="newsletter"> Newsletter </label>                
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    Ensure this box is checked if you would like to reveive email updates</p>
+                <table>
+                    <tr>
+                        <td><labe for="howdidyouhearofus"> How did you  hear of us </labe></td>
+                        <td> <select id="howdidyouhearofus" name="howdidyouhearofus">    
+                            <option value="google"> Google </option>
+                            <option value="fb"> Facebook </option>
+                            <option value="ins"> Instagram </option>
+                            <option value="zalo"> Zalo </option>
+                            <option value="tiktok"> Tik Tok</option>
+                        </select> <br></td>
+                </tr>
+                    <tr>
+                        <td><label for="newsletter"> Newsletter </label> </td>
+                        <td><input type="checkbox" id="newsletter" name="newsletter" >
+                             Ensure this box is checked if you would like to reveive email updates</td>
+                    </tr>
+                </table>
             </div>
 
             <button type="submit">Send message</button> <br>
