@@ -3,37 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Layout2</title>
   <style>
-    .container{
-      width: 400px;
-      height:  200px;
+    header{
+      background-color: antiquewhite;
+      text-align: center;
+      padding: 10px;
+    }
+    nav{
+      width: 20%;
+      height: 400px;
+      float: left;
       background-color: aqua;
     }
-    
-    nav{
-      
-      height: 200px;
-      width: 100;
-      
-    }
     section{
+      width: 50%;
+      height: 400px;
       float: left;
-      height: 200px;
-      width: 250;
+      background-color: rgb(210, 171, 246);
     }
     aside{
-      height: 200px;
-      width: 50px;
-      float: right;
+      width: 30%;
+      height: 400px;
+      float: left;
+      background-color: rgb(201, 169, 169);
+    }
+    footer{
+      text-align: center;
+      background-color: aquamarine;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <section>se</section>
-    <nav>nav</nav>
-    <aside>a</aside>
-  </div>
+    <header>header</header>
+    <main>
+      <nav>nav</nav>
+      <section>section</section>
+      <aside>aside</aside>
+    </main>
+    <footer>footer</footer>
 </body>
 </html>
