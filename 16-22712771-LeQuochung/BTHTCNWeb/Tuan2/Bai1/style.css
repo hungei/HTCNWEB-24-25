@@ -1,0 +1,156 @@
+
+body{
+    height: 700px;
+}
+#Example{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px;   
+    font-style: italic;
+
+    
+}
+.link {
+    height: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #ed9596;
+    text-align: center; 
+    
+
+}
+.link #a2{
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.Starters{
+    margin: 0 auto;
+    height: 25px;  
+    color: #9e403c;
+    letter-spacing: 15px;
+    background-color: #ed9596;
+    padding: 10px;
+    width: 50%;
+    
+    
+}
+
+.Dessert{
+    margin: 0 auto;
+    height: 25px;
+    color: #9e403c;
+    letter-spacing: 15px;
+    background-color: #ed9596;
+    padding: 10px;
+    width: 50%;
+}
+.infomation{
+    text-transform: uppercase;
+    margin: 0 auto;
+    height: 25px;  
+    color: #9e403c;
+    letter-spacing: 15px;
+    background-color: #ed9596;
+    padding: 10px;
+    width: 50%;
+}
+a{
+    color: red;
+
+}
+#text{
+    text-transform: uppercase;
+    color: orange;
+}
+.aside{
+    float: left;
+    width: 15%;
+    height: 500px; 
+}
+.aside ul{
+    list-style: none;
+    margin-left: -50px;
+
+}
+.aside ul li{
+    border-radius: 40px; 
+    background-color: #ed9596;
+    line-height: 30px;
+    margin: 10px;
+    border-width: 100px;
+    padding-right: 30px;
+    color: white;
+
+    
+}
+.aside img{
+    height: 100px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px 0 pink;
+}
+.main{
+   float: left;
+    width: 60%;
+    height: 500px;
+}
+.section{
+    margin-top: 10px;
+    float: left;
+    background-color: black;
+    width: 25%;
+    height: 550px;
+}
+.section p{
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    
+}
+.section #slide1{
+    margin: 25px;
+}
+.section #slide1 #text1{
+    font-size: 12px;
+    text-align: justify;
+}
+.section #slide1 img{
+    height: 100px;
+    width: 260px;
+    
+}
+.container{
+    background-color: white;
+    height: 620px;
+}
+
+.table #row1,#row2{
+    width: 48%;
+}
+.table #row3,#row4{
+    width: 48%;
+}
+.table #row5{
+    width: 48%;
+}
+.table input{
+   height: 20px;    
+}
+
+
+
+.footer {
+    text-align: center;
+    background-color: #ed9596;
+    color: white;
+    font-style: italic;
+  }
+
+
+        

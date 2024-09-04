@@ -1,0 +1,87 @@
+.container{
+   
+    height: 700px;
+    padding: 10px;
+    
+}
+header{
+    height: 100px;   
+    background: url(background.png)
+}
+header img{
+    float: left;
+    height: 70px;
+}
+
+
+header #tieude{
+    color: aliceblue;
+    line-height: 1;
+    display: flex;
+}
+header nav{
+    height: 30px;
+    background-color: gray;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+header nav #link1{
+    color: black;
+}
+.tieude{
+    color: aliceblue;
+}
+
+.main{
+    float: left;
+    height: 570px;
+    width: 70%;
+}
+#main1{
+    height: 50%;
+}
+#main1 #anh3{
+    width: 40%;
+    margin-right: 25px;
+}
+
+#main2 #anh4{
+    width: 40%;
+    margin-right: 25px;
+}
+
+.aside{
+    float: left;
+    height: 570px;
+    width: 30%;
+    
+}
+.aside #text {
+    color: red;
+    line-height: 40px;
+    padding-left: 20px;
+  
+}
+.aside #section2 h2{
+    color: red;
+    padding-top: 20px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.aside #section2 p{
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+footer{
+    background-color: gray;
+    color: aliceblue;
+}
