@@ -1,91 +1,40 @@
-<!---basic-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testtag</title>
-    <style>
-       p{
-        width: 70%;
-        color: blueviolet;
-        font-size: medium;
-        text-align: left;
-        border: 2px solid blue;
-        font-weight: bold;
-        padding-left: 2px;
-
-       }
-       h1{
-        text-align: justify;
-        border-bottom: blue;
-        font-size: 200%;
-        text-align: center;
-       }
-       .content {
-         border: 2px black dotted;
-         display: inline-block;
-         }
-         .box {
-         display: inline-block;
-         background: red;
-         width: 100px;
-         height: 100px;
-         }
-         #two {
-         background-image: linear-gradient(blue purple)
-         
-         }
-        
-    </style>
-</head>
-<body bgcolor="pink" text="red">
-
-
-   <div class="content">
-      <div class="box" id="one">1</div>
-      <div class="box" id="two">2</div>
-      <div class="box" id="three">3</div>
-      <div class="box" id="four">4</div>
-   </div> 
-   <h1 > Honor of kings </h1>
-   <hr width="50%" color="red" size="10">
-   <p>Được phát hành vào năm 2015, trở thành một trong những trò chơi MOBA phổ biến nhất Trung Quốc đại lục. <br> Bản chuyển thể quốc tế có tên là Arena of Valor, được phát hành vào tháng 10 năm 2016, sử dụng cùng một công nghệ và thiết kế giao diện người dùng (đã thay đổi vào năm 2019) nhưng với các tướng được thay đổi rất nhiều để phù hợp với thị trường phương Tây. Tính đến tháng 11 năm 2020, Vương Giả Vinh Diệu đã có hơn 100 triệu người chơi hoạt động hàng ngày, trở thành một trong những trò chơi phổ biến nhất trên thế giới,[2] cũng như trò chơi di động có doanh thu cao nhất mọi thời đại.[a] Ngoài ra, còn là một trong những ứng dụng được tải xuống nhiều nhất trên toàn cầu. </p>
-   <p>
-    Là trò chơi đấu trường chiến đấu trực tuyến nhiều người chơi, trong đó người chơi điều khiển một nhân vật có khả năng độc đáo để tiêu diệt các nhân vật không phải người chơi và đối thủ để nhận điểm kinh nghiệm (XP) và vàng.  Với điểm kinh nghiệm, người chơi có thể mở khóa khả năng của nhân vật hoặc tăng cường thêm sức mạnh cho khả năng hiện có của họ. Vàng có thể được sử dụng để mua vật phẩm tại cửa hàng nhằm thay đổi các thuộc tính cụ thể của nhân vật tùy thuộc vào vật phẩm đã mua.
-    Để giành chiến thắng, người chơi cần phải phá hủy các công trình phòng thủ của kẻ thù, được gọi là tháp pháo.  Chiến thắng đạt được bằng cách phá hủy nhà chính của đối thủ, nằm trong căn cứ của đội đối phương. Cơ chế chơi cụ thể khác nhau tùy thuộc vào chế độ trò chơi được chọn.
-    Kinh nghiệm và vàng cũng kiếm được qua các trận đấu và áp dụng cho tài khoản người chơi. Tài khoản bắt đầu ở cấp 1, với cấp 30 là cấp tối đa. Khi lên cấp, người dùng sẽ nhận được phần thưởng trong trò chơi. Việc tăng cấp cũng mở khóa một số phép phụ trợ nhất định của người triệu hồi có thể áp dụng cho mọi tướng mà chính người chơi sử dụng. Vàng có thể được sử dụng cho nhiều mục đích khác nhau, chẳng hạn như mua tướng mới.
-   </p>
-   <a href="https://honor-of-kings.fandom.com/wiki/Honor_of_Kings_Wiki">click here</a><br>
-   <a href="mailto:lqhung1002@gmail.com">click here to contact</a>
-   <ul>
-    <li>toi1</li>
-    <li>toi2</li>
-    <li>toi3</li>
-    <li>toi4</li>
-   </ul>
-   <form action="">
-      <label for="">Ho:</label>
-      <input type="text" name="txtho" id="txtho" size="30"><br><br>
-      <label for="">ten:</label>
-      <input type="text" name="txtten" id="txtten"><br>
-      <label for="">cho mon</label>
-      <select name="se" id="se">
-         <option value="HTCNW">HTCNW</option>
-         <option value="PTDL">PTDL</option>
-      </select>  <br>
-      <label for="">chon hinh thuc hoc</label><br>
-      <input type="radio" name="ra" id="ra"> ly thuyet <br>
-      <input type="checkbox" name="ra" id="ra"> thuc hanh <br>
-      <label for="">ghi chu</label> <br>
-      <textarea name="txt" id="txt" cols="50" rows="50"></textarea><br>
-      <button type="button">dang ky</button>
-   </form>
-
-
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+var thang = eval(prompt("Hãy nhập thang:"))
+switch (thang)
+{
+   case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+      alert("31 ngay")
+   break;
+   case 4: case 11: case 6:
+      alert('29 ngay')
+   break;
+   case 2: 
+      alert('28 ngay')
+   break;
    
+   default:
+      alert('khong hop le') 
+      break;  
 
+ 
+}
+
+   </script>
+   <script>
+      for (x=1; x<=10;x++)
+         for (i=1; i<=10; i++)
+         {
+         document.write(x +"*" + i+ "=" + (x*i) + "<br >");
+         }
+   </script>
+</head>
+<body>
    
 </body>
 </html>

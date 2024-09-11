@@ -1,0 +1,38 @@
+.headerbar{
+    background-color: aqua;
+    height: 90px;
+}
+
+.sectionbar{
+    background-color: blue;
+    height: 500px;
+}
+.footerbar{
+    height: 100px;
+    background-color: aquamarine;
+}
+.input{
+    text-align: right;
+    margin: 0 auto;
+    width: auto;
+}
+
+#ip1{
+    background-color: brown;
+    margin: 10px;
+}
+.link ul{
+    list-style: none;
+    text-align: right;
+}
+.link ul li{
+    display: inline;
+    margin-right: 10px;
+}
+.link ul li a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+
