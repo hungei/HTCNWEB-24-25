@@ -1,0 +1,101 @@
+* {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.container {
+    width: 700px;
+    height: 800px;
+    background-color: rgb(189, 68, 68);
+}
+
+header {
+    position: relative;
+    background-color: #294e79;
+    height: 150px;
+    width: 700px;
+}
+
+header img {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+header h2 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+header h4 {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.frm {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.frm #ip1 {
+    background-color: blue;
+    height: 20px;
+}
+
+.frm #ip2 {
+    background-color: blue;
+    height: 24px;
+    width: 30px;
+}
+
+nav {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.menu li {
+    display: inline table;
+    background-color: rgb(11, 59, 59);
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.menu li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.menu li a:hover {
+    color: blueviolet;
+}
+
+.menu li>ul {
+    display: none;
+}
+
+.menu li:hover ul {
+    display: block;
+    position: absolute;
+    right: 102px;
+    margin: 0px;
+}
+
+.menu li:hover ul li {
+    display: block;
+}
+
+.menu li:hover ul li a {
+    display: block;
+}
