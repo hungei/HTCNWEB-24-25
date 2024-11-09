@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script>
+ //kiem tra ten
+       //     let txtt=$("#txtt");
+       //     let helpId=$("#helpId");
+//function kiemtraten(){
+        //        let ten=/^[A-Z]{1}[a-z]{0,6}(\s[A-Z]{1}[a-z]{1,6})+$/;
+         //       if(txtt.val()==""){
+        //            helpId.html("bat buoc nhap");
+        //            return false;
+
+       //         }
+      //         if(!ten.test(txtt.val())){
+       //             helpId.html(" nhap dung thong tin");
+       //             return false;
+      //          }
+      //          txtt.html("*");
+    //            return true;
+      //      }
+      //      txtt.blur(kiemtraten);
+       // })
+   $(document).ready(function() {
+    
+    // kiểm tra mã tour : *, theo mẫu
+    var txtt = $("#txtt");
+    var helpId = $("#helpId");
+
+    function Kiemtratennhap() {
+        //Tran An
+        var re = /^[A-Z]{1}[a-z]{0,6}(\s[A)-Z]{1}[a-z]{0,6}){1,7}$/;
+        if (txtt.val() == "") {
+            helpId.html("* bắt buộc nhập");
+            return false;
+        }
+
+        if (!re.test(txtt.val())) {
+            helpId.html("* Mã tour theo mẫu: Tran An");
+            return false;
+        }
+        helpId.html("*");
+        return true;
+    }
+    txtt.blur(Kiemtratennhap);
+    // kiểm tra dt: *
+    var tel = $("#tel");
+    var telId = $("#telId");
+    function Kiemtradienthoai() {
+        //Tran An
+        var re = /^0[3-9]{1}\d{8}$/;
+        if (tel.val() == "") {
+            telId.html("* bắt buộc nhập");
+            return false;
+        }
+
+        if (!re.test(tel.val())) {
+            telId.html("* Mã tour theo mẫu: 0903128350");
+            return false;
+        }
+        telId.html("*");
+        return true;
+    }
+    tel.blur(Kiemtradienthoai);
+   
+});
+    </script>
+</head>
+<body>
+    <div class="container border border-2 border border-danger" style="height: 800px;">
+        <div class="row">
+            <div class="col-12 bg-primary" style="height: 150px;">
+                header
+            </div>
+        </div>
+        <div class="row " style="height: 50px;">
+            <div class="col-12">
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"> link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">link</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                            Open modal
+                          </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 bg-primary" style="height: 450px;">
+                section
+            </div>
+            <div class="col-4 bg-warning " style="height: 450px;">
+               <div class="form-group mt-3">
+                 
+                 <input type="text" name="txtten" id="txtten" class="form-control" placeholder="ho ten" >
+                 
+               </div>
+               <div class="row mt-3">
+                <div class="col">
+                    <input type="tel" name="tel" id="tel" class="form-control" placeholder="tel" >
+                </div>
+                <div class="col">
+                    <select class="form-select">
+                        <option>Nam</option>
+                        <option>Nu</option>
+                        
+                      </select>
+                </div>
+               </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 bg-success" style="height: 150px;">
+                footer
+            </div>
+        </div>
+    </div>
+    <!--modal-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>DANG KY</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                      
+                      <input type="text" name="txtt" id="txtt" class="form-control" placeholder="txtt" >
+                      <small id="helpId" class="text-danger">*</small>
+                    </div>
+                    <div class="form-group">
+                      
+                        <input type="tel" name="tel" id="tel" class="form-control" placeholder="so dien thoai" >
+                        <small id="telId" class="text-danger">*</small>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

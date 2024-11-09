@@ -1,19 +1,72 @@
 *{
-    padding: 0px auto;
-    margin: 0px auto;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
     width: 960px;
-    height: auto;
-    font-family: 'Times New Roman', Times, serif;
-    border: 2px solid black;
-    justify-items: center;
 }
 header{
-    height: 60px;
-    background-image: ;
+    background-image: url(../images/nen_header.jpg);
 }
-nav{
-    height: 40px;
-    background-color: #eac54d ;
+
+.header-left{
+    display: flex;
+    flex-direction: row; /*xếp từ trái qua phải*/
+}
+.header-left-text{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 20px;
+}
+.header-left-text h3{
+    color: #cee2ea ;
+}
+.header-left-text h2{
+    color: #f46e67;
+}
+.header-right{
+    display: flex;
+    flex-direction: column;
+}
+.header-right-text{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.text {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.text  input {
+    width: 81%;
+    height: 33px;
+    align-items: center;
+    padding: 0px 8px;
+}
+.text select{
+    width: 84%;
+}
+.check-box{
+    margin-left: 200px;
+}
+
+
+.body{
+    display: flex;
+    align-items: center;
+}
+.body-trai{
+    width: 70%;
+}
+.body-phai{
+    border-left: 1px solid black;
+    padding-left: 50px;
+    border-bottom: 8px solid orange;
 }

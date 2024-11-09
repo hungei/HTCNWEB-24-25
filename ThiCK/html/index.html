@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="../img/Banner.png" alt="">
+        </header>
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container1">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: blue;" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: blue;" href="#" data-bs-toggle="modal"
+                                data-bs-target="#modalId">Đăng ký</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: blue;" href="#">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <table class="table-bordered table_css1">
+            <thead>
+                <tr class="text-center">
+                    <th>STT</th>
+                    <th>Mã học viên</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>Tiền dịch vụ</th>
+                    <th>Tiền đồ dùng</th>
+                    <th>Tổng thành tiền</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <footer>
+            <div class="row">
+                <div class="col"><i>Mã sinh viên: 22709851</i></div>
+                <div class="col"><i>Họ tên: Võ Minh Khôi</i></div>
+                <div class="col"><i>Mã lớp: DHKHMT18ATT</i></div>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            THÔNG TIN ĐĂNG KÝ
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table-borderless table_css2">
+                            <tr>
+                                <td class="text-end">Mã học viên:</td>
+                                <td>
+                                    <input type="number" id="maHV">
+                                    <br><span class="text-danger" id="tbMaHV">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Họ tên:</td>
+                                <td>
+                                    <input type="text" id="hoTen">
+                                    <br><span class="text-danger" id="tbHoTen">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Email:</td>
+                                <td>
+                                    <input type="email" id="email">
+                                    <br><span class="text-danger" id="tbEmail">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Dịch vụ:</td>
+                                <td>
+                                    <select name="" id="dv">
+                                        <option value="Ván trượt"> Ván trượt</option>
+                                        <option value="Bơi"> Bơi</option>
+                                        <option value="Moto nước"> Moto nước</option>
+                                    </select>
+                                    <br><span class="text-danger">&nbsp;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Giá tiền dịch vụ:</td>
+                                <td>
+                                    <input type="number" id="giaDV" readonly>
+                                    <br><span class="text-danger" id="tbGiaDv">&nbsp;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-end" style="padding-top: 18px;">Đồ dùng:</td>
+                                <td>
+                                    <input type="checkbox" style="width: 5%;" name="" class="dd" value="Đồ lặn"> Đồ lặn
+                                    <br><input type="checkbox" style="width: 5%;" name="" class="dd" value="Đồ bơi"> Đồ
+                                    bơi
+                                    <br><input type="checkbox" style="width: 5%;" name="" class="dd" value="Kính bơi">
+                                    Kính bơi
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-end" style="padding-bottom: 8px;">Giá tiền đồ dùng:</td>
+                                <td>
+                                    <br><input type="number" id="giaDD" readonly>
+                                    <br><span class="text-danger" id="tbGiaDD">&nbsp;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-end" style="padding-bottom: 8px;">Tổng thành tiền:</td>
+                                <td><input type="number" id="tongThanhTien"></td>
+                                <br><span class="text-danger">&nbsp;</span>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br><button type="button" style="width: 49.5%;" class="btn btn-success"
+                                        id="dangKy">Đăng
+                                        ký</button>
+                                    <button type="button" style="width: 49.5%;" class="btn btn-danger"
+                                        data-bs-dismiss="modal">
+                                        Hủy
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <h5>Kiểm tra đăng ký</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional: Place to the bottom of scripts -->
+        <script>
+            const myModal = new bootstrap.Modal(
+                document.getElementById("modalId"),
+                options,
+            );
+        </script>
+
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

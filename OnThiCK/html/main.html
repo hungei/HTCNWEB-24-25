@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+            ul li {
+            width: 150px;
+        }
+        .mauDo{
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            var i=2;
+            $("#btnOpen").click(function(){
+                $("#myModal").modal();
+            });
+
+
+            function KiemTraMa() {
+                var MauKT=/[0-9]{9}$/;
+                if(MauKT.test($("#MaSo").val())==""){
+                    $("#tbMS").html("bat buoc nhap");
+                    $("#tbMS").addClass("mauDo");
+                }else{
+                    $("#tbMS").html("nhap sai");
+                    $("#tbMS").addClass("mauDo");
+                }
+            }
+            $("#MaSo").blur(KiemTraMa)
+        })
+    </script>
+</head>
+<body>
+    <div class="container bg-black">
+        <div class="row">
+            <div class="col-4 col-md-4">
+                <img src="../img/logo.PNG" alt="" srcset="">
+            </div>
+            <div class="col-8 col-md-8 align-content-between align-bottom">
+                <h1>TRUONG DAI HỌC CÔNG NGHIỆP </h1>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link"></a><b>HOME</b></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="myOpen"></a>CONTACT</li>
+                    <li class="nav-item"><a href="#" class="nav-link"></a>SẺVICES</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">MOBI</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" id="btnOpen">VIETTEL</a>
+                            <a href="#" class="dropdown-item">VINA</a>
+                            <a href="#" class="dropdown-item">MOBIPHONE</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link"></a>HELP</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <table class="table table-bodered table-hover table-striped">
+                <tr>
+                    <th>#</th>
+                    <th>first</th>
+                    <th>Name</th>
+                    <th>Handle</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">XIN CHAO</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-row">
+                                    <div class="form-group col-md-3 text-center">
+                                        <label for="inputEmail4">MaSo</label>
+                                    </div>
+                                    <div class="form-group col-md-9">
+                                        <input type="text" class="form-control" id="MaSo">
+                                        <span class="text-danger" id="tbMS">*</span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3 text-center">
+                                        <label for="inputEmail4">Ten</label>
+                                    </div>
+                                    <div class="form-group col-md-9">
+                                        <input type="email" class="form-control" id="inputName">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
